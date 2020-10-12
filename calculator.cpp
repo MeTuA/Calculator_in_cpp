@@ -2,6 +2,7 @@
 #include <iostream>
 #include <string>
 #include <string.h>
+#include<math.h>
 using namespace std;
 
 
@@ -25,10 +26,32 @@ int main()
         cout << "Answer is: " << firstNum + secNum;
     }
     else if(oper == "-"){
-    	cout << "Answer is: " << firstNum - secNum;
+        cout << "Answer is: " << firstNum - secNum;
     }
 
     else if(oper == "*"){
-    	cout << "Answer is: " << firstNum * secNum;
+        cout << "Answer is: " << firstNum * secNum;
+    }
+
+    else if(oper == "/"){
+        cout << "Answer is: " << firstNum/secNum;
+    }
+
+    else if(oper == "sqrt"){
+        cout << "Square root of a + b: " << sqrt(firstNum + secNum);
+    }
+
+    else if(oper == "!"){
+        int ans = 1;
+        for(int i = 1; i <= firstNum;i++){
+            ans = ans * i;
+        }
+        cout << "Factorial of " << firstNum << " is " << ans << endl;
+
+        int ans_2 = 1;
+        for(int i = 1; i <= secNum; i++){
+            ans_2 = ans_2 * i;
+        }
+        cout << "Factorial of " << secNum << " is " << ans_2 << endl;
     }
 }
