@@ -54,4 +54,6 @@ int main()
         }
         cout << "Factorial of " << secNum << " is " << ans_2 << endl;
     }
+
+    cout << "This is end of program";
 }
